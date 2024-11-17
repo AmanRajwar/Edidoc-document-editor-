@@ -68,8 +68,9 @@ Make sure you have the following installed:
 
 4. Open your browser and navigate to http://localhost:3000.
 
+---
 
-##📄 API List
+## 📄 API List
 
 - **api/v1/signup **: For creating account.
 - **api/v1/signin **: For logging in in the  account.
