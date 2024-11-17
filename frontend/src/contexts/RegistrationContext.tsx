@@ -1,5 +1,5 @@
 // ThemeContext.tsx
-import React, { createContext, useContext, useState, ReactNode, Dispatch, SetStateAction } from 'react';
+import React, { createContext, useState, Dispatch, SetStateAction } from 'react';
 
 // Define the shape of the context value
 export interface IRegistration {
@@ -10,7 +10,7 @@ export interface IRegistration {
 
 const defaultState = {
     openRegistration: false,
-    setOpenRegistration: (openRegistration: boolean) => { }
+    setOpenRegistration: (_: boolean) => { }
 } as IRegistration;
 
 

@@ -1,15 +1,5 @@
-import React, { useState } from "react";
 
 const ProfileDropdown = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeDropdown = () => {
-    setIsOpen(false);
-  };
 
   return (
     <div className="absolute right-0 w-64 mt-1 bg-white border rounded-lg shadow-md p-4">

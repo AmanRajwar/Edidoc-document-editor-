@@ -1,5 +1,4 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { closeToast, openToast } from "./features/ToastSlice";
 import { useDispatch, useSelector } from 'react-redux'
 import ToastSlice from "./features/ToastSlice";
 import userReducer from "./features/userSlice";

@@ -13,7 +13,6 @@ import { setCollaborators } from "../../redux/features/collaboratorSlice"
 import { setOpenedDocument } from "../../redux/features/documentSlice"
 import { openToast } from "../../redux/features/ToastSlice"
 
-const SAVE_INTERVAL_MS = 2000
 const TOOLBAR_OPTIONS = [
   [{ header: [1, 2, 3, 4, 5, 6, false] }],
   [{ font: [] }],
@@ -102,18 +101,6 @@ export default function DocumentEditor() {
               }
             }
           }
-
-
-          // dispatch(setOpenedDocument({ openedDocument: { document: newDoc, role: 'owner' } }))
-
-          // if (socket) {
-          //   console.log("handleSubmit", socket)
-          //   socket.emit('editDocument', {
-          //     openedDocumentId: openedDocument._id,
-          //     data: delta.ops,
-          //     collaborators
-          //   })
-          // }
         }
 
       }

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import apiClient from '../lib/apiClient';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { SIGNUP_ROUTE } from '../utils/constants';
 
 const SignUpForm = () => {
@@ -38,7 +38,6 @@ const SignUpForm = () => {
         }
     }
 
-    const route = '/api/v1/signup';
     return (
         <>
             <h1 className='text-[50px]  mb-14 font-alata font-semibold text-black tracking-widest '>Create your Account</h1>

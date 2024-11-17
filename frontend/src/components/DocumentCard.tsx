@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { RootState, useAppDispatch, useAppSelector } from '../redux/store';
 import { setCollaborators } from '../redux/features/collaboratorSlice';
 import { setDocuments, setOpenedDocument } from '../redux/features/documentSlice';

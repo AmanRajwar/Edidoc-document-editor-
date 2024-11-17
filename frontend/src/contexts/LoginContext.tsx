@@ -7,7 +7,7 @@ interface ILogin {
 }
 const defaultValue = {
   openLogin: false,
-  setOpenLogin: (openLogin: boolean) => { }
+  setOpenLogin: (_: boolean) => { }
 } as ILogin;
 
 export const loginContext = createContext(defaultValue);

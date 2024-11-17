@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import  { useState, useEffect } from 'react';
 import DocumentCard from './DocumentCard';
 import { RootState, useAppDispatch, useAppSelector } from '../redux/store';
 import apiClient from '../lib/apiClient';
@@ -6,7 +6,6 @@ import { setDocuments, setNotUserDocument, setOnlyUserDocument } from '../redux/
 import AddDocument from './AddDocument';
 import Dropdown from './Dropdown';
 import { GET_ALL_DOCUMENTS } from '../utils/constants';
-import DocumentEditor from '../pages/document/DocumentEditor';
 
 type OwnershipOption = 'Owned by me' | 'Owned by anyone' | 'Not owned by me';
 
@@ -43,13 +42,6 @@ const Documents = () => {
 
 
 
-    // useEffect(() => {
-    //     if (selectedOwnership == 'Owned by me') {
-    //         const newDocs = documents.filter((document: any) => document.role == 'owner');
-    //         console.log(newDocs)
-    //         dispatch(setDocuments({ documents: newDocs }))
-    //     }
-    // }, [ownershipOptions])
 
 
     return (

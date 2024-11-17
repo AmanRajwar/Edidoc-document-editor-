@@ -1,6 +1,5 @@
-import React, { useRef, useState } from 'react'
+import {  useState } from 'react'
 import ShareCard from './ShareCard'
-import useClickOutside from '../hooks/useClickOutside';
 import { openToast } from '../redux/features/ToastSlice';
 import { RootState, useAppDispatch, useAppSelector } from '../redux/store';
 import ProfileDropdown from './ProfileDropdown';
@@ -15,7 +14,6 @@ const NavBar = ({ search, share }: IProps) => {
     const dispatch = useAppDispatch();
 
     const [openShare, setOpenShare] = useState<boolean>();
-    const shareCardRef = useRef<HTMLDivElement>(null);
     const [showProfileMenu, setShowProfileMenu] = useState<boolean>(false);
     const openedDocument = useAppSelector((state: RootState) => state.documents.openedDocument)
 

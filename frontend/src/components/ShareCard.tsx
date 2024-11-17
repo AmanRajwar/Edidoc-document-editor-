@@ -1,4 +1,4 @@
-import { RefObject, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import apiClient from '../lib/apiClient';
 import Dropdown from './Dropdown';
 import useClickOutside from '../hooks/useClickOutside';
@@ -7,7 +7,6 @@ import { openToast } from '../redux/features/ToastSlice';
 import { ADD_COLLABORATOR } from '../utils/constants';
 
 
-type IRole = 'viewer' | 'editor' | 'owner'
 type DropdownOptions = 'editor' | 'viewer';
 type ShareCardProps = {
     setShare: () => void
@@ -15,7 +14,6 @@ type ShareCardProps = {
 const ShareCard: React.FC<ShareCardProps> = ({ setShare }) => {
     const dispatch = useAppDispatch();
     const [email, setEmail] = useState<string>('')
-    const [readOnly, setReadOnly] = useState(false);
     const shareCardRef = useRef<HTMLDivElement>(null);
     const dropdownOptions: DropdownOptions[] = ['viewer', 'editor'];
     const [selectedOption, setSelectedOption] = useState<DropdownOptions>('viewer');

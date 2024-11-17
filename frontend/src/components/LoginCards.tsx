@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import  { useEffect, useState, useRef } from 'react';
 import { registrationCards } from '../constants/index.ts';
 
 const LoginCards = () => {
@@ -6,8 +6,6 @@ const LoginCards = () => {
     const [isTransitioning, setIsTransitioning] = useState(true); // Track whether we're in transition
 
     const sliderRef = useRef(null);
-    const touchStartX = useRef(0);  // Ref to track touch start position
-    const touchEndX = useRef(0);    // Ref to track touch end position
 
     // Clone the first and last slide
     const firstSlideClone = registrationCards[0];

@@ -1,5 +1,4 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
-import { RootState } from "../store";
 
 export interface IState {
     id: string;
