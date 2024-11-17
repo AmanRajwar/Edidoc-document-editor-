@@ -69,5 +69,16 @@ Make sure you have the following installed:
 4. Open your browser and navigate to http://localhost:3000.
 
 
+##📄 API List
+
+- **api/v1/signup **: For creating account.
+- **api/v1/signin **: For logging in in the  account.
+- **api/v1/user-info **: To get the user info accroding to the JWT tokken.
+- **api/v1/create-docuemnt **: For creating Document.
+- **api/v1/add-collaborator/:id **: Adding collaborators to the document with given id.
+- **api/v1/get-documents **: Gitting all the documents of loged in user.
+- **api/v1/update-own-document/:id **: Update if the user is owner of the Document.
+- **api/v1/delete-document/:id**: Deleting user document.
+
 
    
