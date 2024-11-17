@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center {
+    @apply justify-center items-center
+}
+
+.divider {
+    width: 100%;
+    position: relative;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    --tw-text-opacity: 1;
+    background: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 40%;
+    height: 1px;
+    --tw-text-opacity: 1;
+    background: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.newShadow {
+    -webkit-box-shadow: 0px 2px 7px 0px rgba(77, 77, 77, 0.68);
+    -moz-box-shadow: 0px 2px 7px 0px rgba(77, 77, 77, 0.68);
+    box-shadow: 0px 2px 7px 0px rgba(77, 77, 77, 0.68);
+}
+
